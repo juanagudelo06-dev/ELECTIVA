@@ -1,0 +1,104 @@
+#def presentar(nombre,edad):
+#  print("Nombre", nombre)
+#  print("Edad", edad)
+
+#presentar(nombre,edad)
+
+#def sumar(a+b):
+#  print(a + b)
+
+#resultado=sumar(5,3)
+#print(resultado)
+
+#def multiplicar(a,b):
+#  return a*b
+#resultado = multiplicar(4,5)+10
+#print(resultado)
+
+#def calcular_promedio(notas):
+#  suma=0
+#  for nota in notas:
+#    suma+=nota
+#    return suma/len(notas)
+   
+#notas_ana=[4.0, 3.5, 5.0]
+#promedio = calcular_promedio(notas_ana)
+#print(round(promedio, 2))
+
+#def calcular():
+#  resultado=20
+#  print(resultado)
+#calcular()
+#print(resultado)
+
+#nombre="Laura"
+
+#def saludar():
+#  print(nombre)
+
+#saludar()
+
+#contador=10
+
+#def aumentar():
+#  contador=contador+1
+#  print(contador)
+
+#amuntar()
+
+#def aumentar(numero):
+#  return numero + 1
+#contador=10
+#contador=aumentar(contador)
+#print(contador)
+
+#ejercicio
+
+#def calcular_total(precio, cantidad):
+#  return precio*cantidad
+ 
+#producto={
+#  "nombre":"Teclado",
+#  "precio":80000,
+#  "cantidad":3
+#}
+#producto["total"]=calcular_total(
+#  producto["precio"],
+#  producto["cantidad"]
+#)
+#print(producto)
+
+
+#def sumar_puntos(puntos):
+#  return puntos + 10
+
+#puntos=5
+#puntos=sumar_puntos(puntos)
+#print(puntos)
+
+#Taller
+def calcular_promedio(notas):
+    suma = 0
+    for nota in notas:
+        suma += nota
+    return suma / len(notas)
+
+estudiantes = [
+    {"nombre":"Ana", "notas":[4.0,3.5,5.0]},
+    {"nombre":"Luis", "notas":[2.5,3.0,2.8]},
+    {"nombre":"Carlos", "notas":[4.5,4.0,4.8]}
+]
+
+for estudiante in estudiantes:
+    promedio_calculado = calcular_promedio(estudiante["notas"])
+    estudiante["promedio"] = round(promedio_calculado,2)
+   
+    if estudiante["promedio"] >= 3.0:
+        estudiante["estado"] = "aprobado"
+    else:
+        estudiante["estado"] = " No aprobado"
+
+#print("Luis")
+#print(estudiantes[1])
+for estudiante in estudiantes:
+    print(estudiante)
